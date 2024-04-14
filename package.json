@@ -1,0 +1,16 @@
+{
+  "name": "TASKMANAGER",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "client": "yarn --cwd client dev",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  }
+}

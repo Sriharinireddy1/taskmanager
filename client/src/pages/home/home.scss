@@ -1,0 +1,21 @@
+@import '../../styles/abstract/mixins';
+.home{
+    width : 70%;
+    height: 100vh;
+   @include flex-center(flex,row,center,center);
+
+
+   &__cantainer{
+     width:50%;
+      text-align: center;
+      
+
+      .button {
+        background-color: red;
+        color: white;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        display: inline-block;
+      }
+   }
+}
